@@ -1,5 +1,5 @@
 <template>
-    <header class="container">
+    <header class="container text-center py-4 my-4">
         <h1>{{ title }}</h1>
     </header>
 </template>
@@ -7,7 +7,7 @@
 <script>
 
 export default {
-    name: 'HeaderComponent',
+    name: 'HeadComponent',
     props: ['title']
 }
 

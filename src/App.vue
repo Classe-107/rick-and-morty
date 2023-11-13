@@ -1,18 +1,20 @@
 <template>
-  <HeaderComponent title="Rick and Morty" />
+  <HeadComponent title="Rick and Morty" />
   <main class="container">
-
+    <CharacterList />
   </main>
 </template>
 
 <script>
 import { store } from './data/store.js';
 import axios from 'axios';
-import HeaderComponent from './components/HeaderComponent.vue';
+import HeadComponent from './components/HeadComponent.vue';
+import CharacterList from './components/CharacterList.vue';
 export default {
   name: 'App',
   components: {
-    HeaderComponent
+    HeadComponent,
+    CharacterList
   },
   data() {
     return {
