@@ -25,10 +25,7 @@ export default {
   data() {
     return {
       store,
-      params: {
-        num: 20,
-        offset: 0
-      }
+      params: null
 
     }
   },
