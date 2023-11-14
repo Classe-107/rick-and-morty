@@ -37,8 +37,7 @@ export default {
       console.log(search);
       if (search) {
         this.params = {
-          num: 20,
-          offset: 0
+          status: search
         }
       } else {
         this.params = null;
