@@ -8,5 +8,7 @@ export const store = reactive({
     location: "location",
     episode: "episode",
   },
+  error: "",
+  loading: true,
   characterList: [],
 });

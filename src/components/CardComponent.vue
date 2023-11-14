@@ -6,6 +6,7 @@
             <h6 class="card-title">{{ subtitle }}</h6>
             <h6 class="card-title">{{ text }}</h6>
 
+
         </div>
     </div>
 </template>
@@ -18,7 +19,9 @@ export default {
         'title',
         'subtitle',
         'text'
-    ]
+    ],
+
+
 }
 </script>
 

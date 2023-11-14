@@ -1,8 +1,13 @@
 <template>
     <section>
-        <div class="row gy-4" v-if="store.characterList.length > 0">
-            <div class="col-12 col-md-4 col-lg-3" v-for="(item, index) in store.characterList" :key="item.id">
+        <div class="row gy-4">
+            <div class=" col-12 col-md-4 col-lg-3" v-for=" (item, index) in store.characterList" :key="item.id">
                 <CardComponent :image="item.image" :title="item.name" :subtitle="item.status" :text="item.species" />
+            </div>
+            <div class="col-12" v-if="store.error">
+                <div class="alert alert-danger">
+                    {{ store.error }}
+                </div>
             </div>
         </div>
     </section>
@@ -14,15 +19,17 @@ import CardComponent from './CardComponent.vue';
 
 export default {
     name: 'CharacterList',
-    component: {
+    components: {
         CardComponent
     },
     data() {
         return {
-            store
+            store,
+
+
         };
     },
-    components: { CardComponent }
+
 }
 </script>
 
